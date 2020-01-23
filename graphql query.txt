@@ -1,0 +1,25 @@
+mutation {
+  createVehicle(type:"Airoplain",modelCode:"TESLA 505",brandName:"TESLA",launchDate:"2019-07-09"){
+    id
+  }
+}
+
+mutation {
+deleteVehicle(id:6)
+
+}
+
+{
+  vehicles(count: 4){
+    id,
+    modelCode
+  }
+}
+
+{
+  vehicle (id:4){
+    brandName,
+    modelCode
+  }
+}
+
